@@ -10,7 +10,7 @@
 #   Get Available RAM
 #   Perform same maths
 #   Output to radial LEDs
-#   Check to see if sleep causes spikes in CPU
+#   Check to see if sleep causes spikes in CPU - Update: It does not 
 
 
 from itertools import cycle
