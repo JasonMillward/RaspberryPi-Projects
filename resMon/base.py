@@ -16,8 +16,10 @@
 from itertools import cycle
 from time import sleep
 import RPi.GPIO as GPIO
+import psutil
 from memoryMonitor import MemoryMonitor
 
+print psutil.cpu_times()
 
 GPIO.setmode(GPIO.BCM)
 
