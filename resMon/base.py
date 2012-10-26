@@ -76,7 +76,7 @@ def main():
         
         shiftDec(memoryLED)
             
-        sleep(5)
+        sleep(2)
 
 
 if __name__ == '__main__':
