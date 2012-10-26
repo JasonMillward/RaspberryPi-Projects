@@ -54,12 +54,15 @@ def read_lines(filename):
 
 def main():
     #init()  
-    memory = psutil.phymem_usage()
-    memoryLED =  int(memory[3] / 6.25)    
-    cpuLED =  int(psutil.cpu_percent(interval=1) / 6.25)
-     
-    print "Memory LEDs to light up: %d" % memoryLED
-    print "CPU LEDs to light up:    %d" % cpuLED
+    while True:
+        memory = psutil.phymem_usage()
+        memoryLED =  int(memory[3] / 6.25)    
+        cpuLED =  int(psutil.cpu_percent(interval=1) / 6.25)
+         
+        print "Memory LEDs to light up: %d" % memoryLED
+        print "CPU LEDs to light up:    %d" % cpuLED
+        
+        sleep(5)
 
     #for frame in cycle(read_lines(filename)):
     #        #print frame
