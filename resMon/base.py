@@ -39,7 +39,7 @@ def init():
     digital_write(LATCH_PIN, 0)
 
 def shift_bit(value):
-    digital_write(DATA_PIN, value)
+    digital_write(DATA_PIN, int(value))
     digital_write(CLOCK_PIN, 1)
     digital_write(CLOCK_PIN, 0)
 
