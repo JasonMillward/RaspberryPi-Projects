@@ -56,7 +56,7 @@ def dec_to_bit(x):
     output = ""
     for y in range(1, 16):
         if x > 1:
-            x--
+            x = x - 1
             output = output + "1"
         else:
             output = output + "0"
