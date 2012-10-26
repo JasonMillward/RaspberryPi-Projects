@@ -17,7 +17,7 @@ LATCH_PIN = 22
 
 
 GPIO.setup(DATA_PIN, GPIO.OUT)
-GPIO.setup(data_pin, GPIO.OUT)
+GPIO.setup(CLOCK_PIN, GPIO.OUT)
 GPIO.setup(data_pin, GPIO.OUT)
 
 def digital_write(pin, value):
