@@ -75,6 +75,9 @@ def main():
         print "CPU LEDs to light up:    %d" % cpuLED
         
         bits = dec_to_bit(memoryLED)
+        
+        for c in st:
+            print c
         sleep(5)
 
     #for frame in cycle(read_lines(filename)):
