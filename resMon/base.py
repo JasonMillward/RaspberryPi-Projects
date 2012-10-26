@@ -56,6 +56,8 @@ def shiftDec(x):
         else:
             bits = "0" + bits 
 
+    print bits
+    
     for bit in bits:
         shift_bit(bit)
     
