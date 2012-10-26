@@ -53,12 +53,14 @@ def read_lines(filename):
                         yield line.strip()
 
 def main():
-
+    #init()  
     memory = psutil.phymem_usage()
-    print int(memory[3] / 6.25)
-    
-    print int(psutil.cpu_percent(interval=1) / 6.25)
-    #init()    
+    memoryLED =  int(memory[3] / 6.25)    
+    cpuLED =  int(psutil.cpu_percent(interval=1) / 6.25)
+     
+    print "Memory LEDs to light up: %d" % memoryLED
+    print "CPU LEDs to light up:    %d" % cpuLED
+
     #for frame in cycle(read_lines(filename)):
     #        #print frame
     #        for pixel in frame:
