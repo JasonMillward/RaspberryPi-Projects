@@ -21,6 +21,9 @@ from memoryMonitor import MemoryMonitor
 
 print psutil.phymem_usage()
 
+print psutil.phymem_usage()
+
+
 GPIO.setmode(GPIO.BCM)
 
 DATA_PIN = 17
