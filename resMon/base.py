@@ -55,7 +55,7 @@ def read_lines(filename):
 def main():
 
     memory = psutil.phymem_usage()
-    print memory['percentage']
+    print memory[3]
     
     print psutil.cpu_percent(interval=1) / 6.25
     #init()    
