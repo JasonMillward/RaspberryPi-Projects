@@ -11,12 +11,12 @@ GPIO.setmode(GPIO.BCM)
 
 
 # Connect the shift register pins to these GPIO pins.
-data_pin = 17
-clock_pin = 21
-latch_pin = 22
+DATA_PIN = 17
+CLOCK_PIN = 21
+LATCH_PIN = 22
 
 
-GPIO.setup(data_pin, GPIO.OUT)
+GPIO.setup(DATA_PIN, GPIO.OUT)
 GPIO.setup(data_pin, GPIO.OUT)
 GPIO.setup(data_pin, GPIO.OUT)
 
