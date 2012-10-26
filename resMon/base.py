@@ -65,16 +65,20 @@ def shiftDec(x):
 
     
 def main():
-    init()  
+    init()
+    a=0
     while True:
-        memory = psutil.phymem_usage()
-        memoryLED =  int(memory[3] / 6.25)    
-        cpuLED =  int(psutil.cpu_percent(interval=1) / 6.25)
+        a=a+1
+        if a > 16:
+            a=0
+        #memory = psutil.phymem_usage()
+        #memoryLED =  int(memory[3] / 6.25)    
+        #cpuLED =  int(psutil.cpu_percent(interval=1) / 6.25)
          
         print "Memory LEDs to light up: %d" % memoryLED
         print "CPU LEDs to light up:    %d" % cpuLED
         
-        shiftDec(memoryLED)
+        shiftDec(a)
             
         sleep(2)
 
