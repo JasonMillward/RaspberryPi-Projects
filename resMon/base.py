@@ -75,8 +75,8 @@ def main():
         #memoryLED =  int(memory[3] / 6.25)    
         #cpuLED =  int(psutil.cpu_percent(interval=1) / 6.25)
          
-        print "Memory LEDs to light up: %d" % memoryLED
-        print "CPU LEDs to light up:    %d" % cpuLED
+        #print "Memory LEDs to light up: %d" % memoryLED
+        #print "CPU LEDs to light up:    %d" % cpuLED
         
         shiftDec(a)
             
