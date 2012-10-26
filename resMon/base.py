@@ -57,7 +57,7 @@ def main():
     memory = psutil.phymem_usage()
     print int(memory[3] / 6.25)
     
-    print round(psutil.cpu_percent(interval=1) / 6.25,0)
+    print int(psutil.cpu_percent(interval=1) / 6.25)
     #init()    
     #for frame in cycle(read_lines(filename)):
     #        #print frame
