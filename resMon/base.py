@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+# Currently rewriting code to use GPIO instead of /sys/classes/gpio pin outs
+# 
+
+
 # Take cpu load percentate, *100 / 6.25
 
 
