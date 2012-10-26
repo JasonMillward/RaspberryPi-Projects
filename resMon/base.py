@@ -51,8 +51,8 @@ def read_lines(filename):
     with open(filename) as f:
         for line in f:
             yield line.strip()
-def dec_to_bin(x):
-    return int(bin(x)[2:])
+def dec_to_bit(x):
+    
     
 def main():
     #init()  
@@ -64,7 +64,7 @@ def main():
         print "Memory LEDs to light up: %d" % memoryLED
         print "CPU LEDs to light up:    %d" % cpuLED
         
-        print bin(memoryLED)
+        print dec_to_bit(memoryLED)
         sleep(5)
 
     #for frame in cycle(read_lines(filename)):
