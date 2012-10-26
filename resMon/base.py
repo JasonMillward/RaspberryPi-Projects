@@ -18,11 +18,14 @@ import RPi.GPIO as GPIO
 import psutil
 
 
-GPIO.setmode(GPIO.BCM)
+
 
 DATA_PIN = 17
 CLOCK_PIN = 21
 LATCH_PIN = 22
+
+GPIO.setmode(GPIO.BCM)
+
 
 GPIO.setup(DATA_PIN, GPIO.OUT)
 GPIO.setup(CLOCK_PIN, GPIO.OUT)
