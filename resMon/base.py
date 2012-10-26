@@ -19,7 +19,7 @@ import RPi.GPIO as GPIO
 import psutil
 from memoryMonitor import MemoryMonitor
 
-print psutil.virtual_memory()
+print psutil.phymem_usage()
 
 GPIO.setmode(GPIO.BCM)
 
