@@ -33,18 +33,18 @@ def digital_write(pin, value):
     GPIO.output(pin, '1' if value else '0')
 
 def init():
-    digital_write(data_pin, 0)
-    digital_write(clock_pin, 0)
-    digital_write(latch_pin, 0)
+    digital_write(DATA_PIN, 0)
+    digital_write(CLOCK_PIN, 0)
+    digital_write(LATCH_PIN, 0)
 
 def shift_bit(value):
-    digital_write(data_pin, value)
-    digital_write(clock_pin, 1)
-    digital_write(clock_pin, 0)
+    digital_write(DATA_PIN, value)
+    digital_write(CLOCK_PIN, 1)
+    digital_write(CLOCK_PIN, 0)
 
 def latch():
-    digital_write(latch_pin, 1)
-    digital_write(latch_pin, 0)
+    digital_write(LATCH_PIN, 1)
+    digital_write(LATCH_PIN, 0)
 
 def read_lines(filename):
     with open(filename) as f:
