@@ -48,9 +48,9 @@ def latch():
         digital_write(latch_pin, 0)
 
 def read_lines(filename):
-        with open(filename) as f:
-                for line in f:
-                        yield line.strip()
+    with open(filename) as f:
+        for line in f:
+            yield line.strip()
 
 def main():
     #init()  
