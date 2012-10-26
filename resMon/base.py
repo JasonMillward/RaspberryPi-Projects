@@ -52,13 +52,14 @@ def read_lines(filename):
 
 def main():
         init()
-        filename = 'animation.txt'
-        for frame in cycle(read_lines(filename)):
-                #print frame
-                for pixel in frame:
-                        shift_bit(pixel == '#')
-                latch()
-                sleep(0.05)
+        
+        
+        #for frame in cycle(read_lines(filename)):
+        #        #print frame
+        #        for pixel in frame:
+        #                shift_bit(pixel == '#')
+        #        latch()
+        #        sleep(0.05)
 
 if __name__ == '__main__':
         main()
