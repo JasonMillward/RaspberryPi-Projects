@@ -21,7 +21,7 @@ from memoryMonitor import MemoryMonitor
 
 print psutil.phymem_usage()
 
-print psutil.http://code.google.com/p/psutil/wiki/Documentation#Memory()
+print psutil.cpu_percent()
 
 
 GPIO.setmode(GPIO.BCM)
