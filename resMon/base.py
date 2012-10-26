@@ -13,7 +13,6 @@
 #   Check to see if sleep causes spikes in CPU - Update: It does not 
 
 
-from itertools import cycle
 from time import sleep
 import RPi.GPIO as GPIO
 import psutil
