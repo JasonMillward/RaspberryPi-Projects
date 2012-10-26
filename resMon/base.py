@@ -16,6 +16,11 @@
 from itertools import cycle
 from time import sleep
 import RPi.GPIO as GPIO
+from memorymonitor import MemoryMonitor
+
+memory_mon = MemoryMonitor('username')
+used_memory = memory_mon.usage()
+
 
 GPIO.setmode(GPIO.BCM)
 
