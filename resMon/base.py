@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 
 # Currently rewriting code to use GPIO instead of /sys/classes/gpio pin outs
-# 
+# Using Adafruits WebIDE on the Raspberry Pi
+# 4th time using Python
 
 
 # Take cpu load percentate, *100 / 6.25
