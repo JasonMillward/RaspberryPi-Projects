@@ -47,15 +47,16 @@ def latch():
     digital_write(LATCH_PIN, 0)
 
 def dec_to_bit(x):
-    output = ""
+    bits = ""
     for y in range(1, 16):
         if x > 1:
             x = x - 1
-            output = "1" + output
+            bits = "1" + bits
         else:
-            output = "0" + output 
-    
-    return output
+            bits = "0" + bits 
+
+    for bit in bits:
+        shift_bit(bit)
     
     
 def main():
@@ -68,10 +69,7 @@ def main():
         print "Memory LEDs to light up: %d" % memoryLED
         print "CPU LEDs to light up:    %d" % cpuLED
         
-        bits = dec_to_bit(memoryLED)
-        
-        for c in bits:
-            shift_bit(c)
+        shiftDec(memoryLED)
             
         sleep(5)
 
