@@ -81,6 +81,8 @@ def main():
         shiftDec(0)
         shiftDec(0)
         shiftDec(11)
+        shiftDec(11)
+        shiftDec(11)
             
         sleep(1)
 
