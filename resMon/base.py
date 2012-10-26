@@ -60,7 +60,7 @@ def shiftDec(x):
     
     
 def main():
-    #init()  
+    init()  
     while True:
         memory = psutil.phymem_usage()
         memoryLED =  int(memory[3] / 6.25)    
@@ -73,12 +73,6 @@ def main():
             
         sleep(5)
 
-    #for frame in cycle(read_lines(filename)):
-    #        #print frame
-    #        for pixel in frame:
-    #                shift_bit(pixel == '#')
-    #        latch()
-    #        sleep(0.05)
 
 if __name__ == '__main__':
     main()
