@@ -10,7 +10,6 @@ import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)
 
 
-# Connect the shift register pins to these GPIO pins.
 DATA_PIN = 17
 CLOCK_PIN = 21
 LATCH_PIN = 22
