@@ -19,7 +19,7 @@ import RPi.GPIO as GPIO
 import psutil
 from memoryMonitor import MemoryMonitor
 
-print psutil.cpu_times()
+print psutil.cpu_times(0.1)
 
 GPIO.setmode(GPIO.BCM)
 
