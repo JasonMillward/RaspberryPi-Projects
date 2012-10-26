@@ -21,9 +21,7 @@ GPIO.setup(LATCH_PIN, GPIO.OUT)
 
 def digital_write(pin, value):
     GPIO.output(latch_pin, True)
-    path = '/sys/class/gpio/gpio%d/value' % pin
-        with open(path, 'w') as f:
-                f.write('1' if value else '0')
+
 
 def init():
         digital_write(data_pin, 0)
