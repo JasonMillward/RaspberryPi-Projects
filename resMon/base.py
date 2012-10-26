@@ -34,18 +34,18 @@ def digital_write(pin, value):
 
 
 def init():
-        digital_write(data_pin, 0)
-        digital_write(clock_pin, 0)
-        digital_write(latch_pin, 0)
+    digital_write(data_pin, 0)
+    digital_write(clock_pin, 0)
+    digital_write(latch_pin, 0)
 
 def shift_bit(value):
-        digital_write(data_pin, value)
-        digital_write(clock_pin, 1)
-        digital_write(clock_pin, 0)
+    digital_write(data_pin, value)
+    digital_write(clock_pin, 1)
+    digital_write(clock_pin, 0)
 
 def latch():
-        digital_write(latch_pin, 1)
-        digital_write(latch_pin, 0)
+    digital_write(latch_pin, 1)
+    digital_write(latch_pin, 0)
 
 def read_lines(filename):
     with open(filename) as f:
