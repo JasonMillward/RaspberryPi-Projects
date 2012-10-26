@@ -51,7 +51,9 @@ def read_lines(filename):
     with open(filename) as f:
         for line in f:
             yield line.strip()
-
+def dec_to_bin(x):
+    return int(bin(x)[2:])
+    
 def main():
     #init()  
     while True:
