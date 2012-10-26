@@ -17,7 +17,6 @@ from itertools import cycle
 from time import sleep
 import RPi.GPIO as GPIO
 import psutil
-from memoryMonitor import MemoryMonitor
 
 print psutil.phymem_usage()
 
