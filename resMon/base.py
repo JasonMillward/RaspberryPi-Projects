@@ -78,7 +78,7 @@ def main():
         #print "Memory LEDs to light up: %d" % memoryLED
         #print "CPU LEDs to light up:    %d" % cpuLED
         
-        shiftDec(a)
+        shiftDec(10)
             
         sleep(1)
 
