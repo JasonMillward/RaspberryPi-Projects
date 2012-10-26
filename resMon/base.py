@@ -16,7 +16,7 @@
 from itertools import cycle
 from time import sleep
 import RPi.GPIO as GPIO
-from memorymonitor import memoryMonitor
+from MemoryMonitor import memoryMonitor
 
 
 GPIO.setmode(GPIO.BCM)
