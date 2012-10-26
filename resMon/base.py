@@ -31,6 +31,7 @@ GPIO.setup(CLOCK_PIN, GPIO.OUT)
 GPIO.setup(LATCH_PIN, GPIO.OUT)
 
 def digital_write(pin, value):
+    print value
     GPIO.output(pin, True)
 
 def init():
