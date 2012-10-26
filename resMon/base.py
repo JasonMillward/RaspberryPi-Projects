@@ -46,11 +46,6 @@ def latch():
     digital_write(LATCH_PIN, 1)
     digital_write(LATCH_PIN, 0)
 
-def read_lines(filename):
-    with open(filename) as f:
-        for line in f:
-            yield line.strip()
-            
 def dec_to_bit(x):
     output = ""
     for y in range(1, 16):
