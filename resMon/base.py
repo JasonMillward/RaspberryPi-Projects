@@ -54,7 +54,7 @@ def read_lines(filename):
 
 def main():
 
-    memory_mon = MemoryMonitor('username')
+    memory_mon = MemoryMonitor('root')
     used_memory = memory_mon.usage()
     #init()    
     #for frame in cycle(read_lines(filename)):
