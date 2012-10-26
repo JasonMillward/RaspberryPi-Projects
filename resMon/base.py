@@ -77,7 +77,7 @@ def main():
         bits = dec_to_bit(memoryLED)
         
         for c in bits:
-            print c
+            shift_bit(c)
         sleep(5)
 
     #for frame in cycle(read_lines(filename)):
