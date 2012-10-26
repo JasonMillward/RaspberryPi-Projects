@@ -52,9 +52,9 @@ def shiftDec(x):
     for y in range(1, 16):
         if x > 1:
             x = x - 1
-            bits = "0" + bits
+            bits = "1" + bits
         else:
-            bits = "1" + bits 
+            bits = "0" + bits 
 
     print bits
     
