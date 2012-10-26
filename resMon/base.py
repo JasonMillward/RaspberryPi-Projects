@@ -20,7 +20,7 @@ import psutil
 
 print psutil.phymem_usage()
 
-print psutil.psutil.cpu_percent(interval=1, percpu=True)
+print psutil.cpu_percent(interval=1, percpu=True)
 
 
 GPIO.setmode(GPIO.BCM)
