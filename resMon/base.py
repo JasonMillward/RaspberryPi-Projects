@@ -51,11 +51,7 @@ def read_lines(filename):
                         yield line.strip()
 
 def main():
-        #init()
-        print "Program is started"
-        sleep(50)
-        print "Program has ended"
-        
+        #init()    
         #for frame in cycle(read_lines(filename)):
         #        #print frame
         #        for pixel in frame:
