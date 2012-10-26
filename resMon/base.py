@@ -4,8 +4,13 @@
 # Using Adafruits WebIDE on the Raspberry Pi
 # 4th time using Python
 
-
-# Take cpu load percentate, *100 / 6.25
+# TODO: 
+#   Get CPU Load
+#   Take cpu load percentate, *100 / 6.25
+#   Get Available RAM
+#   Perform same maths
+#   Output to radial LEDs
+#   Check to see if sleep causes spikes in CPU
 
 
 from itertools import cycle
