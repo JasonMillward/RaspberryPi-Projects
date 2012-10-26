@@ -18,10 +18,6 @@ from time import sleep
 import RPi.GPIO as GPIO
 import psutil
 
-print psutil.phymem_usage()
-
-print psutil.cpu_percent(interval=1, percpu=True)
-
 
 GPIO.setmode(GPIO.BCM)
 
@@ -57,6 +53,10 @@ def read_lines(filename):
                         yield line.strip()
 
 def main():
+
+    print psutil.phymem_usage()
+    
+    print psutil.cpu_percent(interval=1, percpu=True)
     #init()    
     #for frame in cycle(read_lines(filename)):
     #        #print frame
