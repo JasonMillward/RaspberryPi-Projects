@@ -59,6 +59,7 @@ def shiftDec(x):
         shift_bit(bit)
     
     latch()
+
     
 def main():
     init()  
