@@ -56,7 +56,7 @@ def main():
 
     print psutil.phymem_usage()
     
-    print psutil.cpu_times(interval=0)
+    print psutil.cpu_times()
     #init()    
     #for frame in cycle(read_lines(filename)):
     #        #print frame
