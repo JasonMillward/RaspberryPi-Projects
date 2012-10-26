@@ -53,13 +53,16 @@ def read_lines(filename):
                         yield line.strip()
 
 def main():
-        #init()    
-        #for frame in cycle(read_lines(filename)):
-        #        #print frame
-        #        for pixel in frame:
-        #                shift_bit(pixel == '#')
-        #        latch()
-        #        sleep(0.05)
+
+    memory_mon = MemoryMonitor('username')
+    used_memory = memory_mon.usage()
+    #init()    
+    #for frame in cycle(read_lines(filename)):
+    #        #print frame
+    #        for pixel in frame:
+    #                shift_bit(pixel == '#')
+    #        latch()
+    #        sleep(0.05)
 
 if __name__ == '__main__':
         main()
