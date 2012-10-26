@@ -52,7 +52,7 @@ def read_lines(filename):
         for line in f:
             yield line.strip()
 def dec_to_bit(x):
-    
+    for x in range(0, 16):
     
 def main():
     #init()  
