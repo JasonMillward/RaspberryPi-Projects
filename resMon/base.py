@@ -21,7 +21,7 @@ from memoryMonitor import MemoryMonitor
 
 print psutil.phymem_usage()
 
-print psutil.phymem_usage()
+print psutil.http://code.google.com/p/psutil/wiki/Documentation#Memory()
 
 
 GPIO.setmode(GPIO.BCM)
