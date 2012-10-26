@@ -80,7 +80,7 @@ def main():
         
         shiftDec(a)
             
-        sleep(2)
+        sleep(0.05)
 
 
 if __name__ == '__main__':
