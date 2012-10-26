@@ -76,7 +76,7 @@ def main():
         
         bits = dec_to_bit(memoryLED)
         
-        for c in st:
+        for c in bits:
             print c
         sleep(5)
 
