@@ -78,6 +78,7 @@ def main():
         
         for c in bits:
             shift_bit(c)
+            
         sleep(5)
 
     #for frame in cycle(read_lines(filename)):
