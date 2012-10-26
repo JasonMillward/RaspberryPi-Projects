@@ -46,7 +46,7 @@ def latch():
     digital_write(LATCH_PIN, 1)
     digital_write(LATCH_PIN, 0)
 
-def dec_to_bit(x):
+def shiftDec(x):
     bits = ""
     for y in range(1, 16):
         if x > 1:
