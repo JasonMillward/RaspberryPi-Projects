@@ -58,6 +58,8 @@ def shiftDec(x):
     for bit in bits:
         shift_bit(bit)
     
+    latch()
+    
 def main():
     init()  
     while True:
