@@ -58,10 +58,6 @@ def read_lines(filename):
                         yield line.strip()
 
 def main():
-
-    memory_mon = MemoryMonitor('root')
-    used_memory = memory_mon.usage()
-    print used_memory
     #init()    
     #for frame in cycle(read_lines(filename)):
     #        #print frame
