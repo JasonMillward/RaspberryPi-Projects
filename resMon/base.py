@@ -20,9 +20,10 @@ import psutil
 
 
 
-DATA_PIN = 17
-CLOCK_PIN = 21
-LATCH_PIN = 22
+DATA_PIN = 22
+CLEAR_PIN = 22
+CLOCK_PIN = 18
+LATCH_PIN = 17
 
 GPIO.setmode(GPIO.BCM)
 
