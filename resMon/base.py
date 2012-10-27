@@ -21,7 +21,7 @@ import psutil
 
 
 DATA_PIN = 22
-CLEAR_PIN = 22
+CLEAR_PIN = 21
 CLOCK_PIN = 18
 LATCH_PIN = 17
 
